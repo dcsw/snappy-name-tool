@@ -2,14 +2,17 @@ import re
 import sys
 
 def shorten_name(name):
-    # Remove non-alphabetic characters and convert to lowercase
-    cleaned_name = re.sub(r'[^a-zA-Z]', '', name).lower()
+    # Split the name into words
+    words = name.split()
+    
+    # Take the first letter of each word and convert to lowercase
+    first_letters = [word[0].lower() for word in words]
     
     # Create a mapping of first letters to numbers
     letter_to_number = {chr(i): str(i - 96) for i in range(97, 123)}
     
     # Shorten the name
-    shortened_name = ''.join(letter_to_number.get(char, char) for char in cleaned_name)
+    shortened_name = ''.join(letter_to_number.get(char, char) for char in first_letters)
     
     return shortened_name
 
