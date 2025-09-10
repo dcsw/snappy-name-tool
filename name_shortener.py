@@ -6,7 +6,9 @@ def shorten_name(name):
     first_letter = name[0].lower()
     
     # Count all non-whitespace characters remaining
-    non_whitespace_count = len(re.sub(r'\s+', '', name)) - 1
+    non_whitespace_count = len(re.sub(r'\s+', '', name)) - 2
+    if non_whitespace_count < 0:
+        non_whitespace_count = 0
     
     # Get the last letter in lowercase
     last_letter = name[-1].lower()
