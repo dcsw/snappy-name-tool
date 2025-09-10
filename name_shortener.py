@@ -2,17 +2,17 @@ import re
 import sys
 
 def shorten_name(name):
-    # Split the name into words
-    words = name.split()
+    # Take the first letter in lowercase
+    first_letter = name[0].lower()
     
-    # Take the first letter of each word and convert to lowercase
-    first_letters = [word[0].lower() for word in words]
+    # Count all non-whitespace characters remaining
+    non_whitespace_count = len(re.sub(r'\s+', '', name)) - 1
     
-    # Create a mapping of first letters to numbers
-    letter_to_number = {chr(i): str(i - 96) for i in range(97, 123)}
+    # Get the last letter in lowercase
+    last_letter = name[-1].lower()
     
     # Shorten the name
-    shortened_name = first_letters[0] + ''.join(letter_to_number[char] for char in first_letters[1:])
+    shortened_name = first_letter + str(non_whitespace_count) + last_letter
     
     return shortened_name
 
