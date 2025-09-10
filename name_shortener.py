@@ -12,7 +12,7 @@ def shorten_name(name):
     letter_to_number = {chr(i): str(i - 96) for i in range(97, 123)}
     
     # Shorten the name
-    shortened_name = ''.join(letter_to_number.get(char, char) for char in first_letters)
+    shortened_name = ''.join([first_letters[0]] + [letter_to_number.get(char, char) for char in first_letters[1:]])
     
     return shortened_name
 
