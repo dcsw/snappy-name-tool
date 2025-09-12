@@ -7,7 +7,8 @@ name = "s14l"
 version = "0.1.0"
 description = "A simple tool that shortens names by taking the first letter, counting non-whitespace characters, and appending the last letter."
 authors = [
-    {name = "Unknown", email = "unknown@example.com"}
+    <!-- {name = "dcsw", email = "unknown@example.com"} -->
+    {name = "dcsw"}
 ]
 readme = "README.md"
 license = {text = "MIT"}
@@ -28,5 +29,5 @@ dependencies = []
 s14l = "s14l:main"
 
 [project.urls]
-Homepage = "https://github.com/unknown/s14l"
-Repository = "https://github.com/unknown/s14l"
+Homepage = "https://github.com/dcsw/snappy-name-tool"
+Repository = "https://github.com/dcsw/snappy-name-tool"

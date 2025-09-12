@@ -1,9 +1,0 @@
-
-## How it works
-1. Takes the first letter of the name (lowercase)
-2. Counts all non-whitespace characters except the first and last letters
-3. Takes the last letter of the name (lowercase)
-4. Combines them as: `first_letter + count + last_letter`
-
-## License
-MIT
