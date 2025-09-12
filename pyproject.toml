@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s14l"
+version = "0.1.0"
+description = "A simple tool that shortens names by taking the first letter, counting non-whitespace characters, and appending the last letter."
+authors = [
+    {name = "Unknown", email = "unknown@example.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+s14l = "s14l:main"
+
+[project.urls]
+Homepage = "https://github.com/unknown/s14l"
+Repository = "https://github.com/unknown/s14l"
