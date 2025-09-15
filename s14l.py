@@ -20,10 +20,8 @@ def shorten_name(name):
     return shortened_name
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python name_shortener.py <name>")
-        sys.exit(1)
-    
-    name = sys.argv[1]
-    shortened = shorten_name(name)
-    print(shortened)
+    if len(sys.argv) < 2:
+        print("Usage: python name_shortener.py <name> [name...]")
+    for name in sys.argv[1:]:
+        shortened = shorten_name(name)
+        print(shortened)
