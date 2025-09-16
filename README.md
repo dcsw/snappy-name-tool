@@ -52,6 +52,23 @@ Using quotaton marks around names with spaces will yield results as above.
 This project's only requirements are Python v3.8 or higher.
 Once python is installed, no additonal installs are required.
 
+## CI/CD Pipeline
+This project uses GitHub Actions for continuous integration and deployment. The CI/CD pipeline is triggered on:
+
+- Push to the `main` branch
+- Pull requests targeting the `main` branch
+
+### Pipeline Steps
+1. **Code Checkout**: The latest code is checked out from the repository
+2. **Python Setup**: Python is installed and configured
+3. **Dependency Installation**: Project dependencies are installed from `requirements.txt`
+4. **Test Execution**: Unit tests are run using `python -m unittest discover -s .`
+5. **SBOM Generation**: A Software Bill of Materials (SBOM) is generated using the `generate_sbom.py` script
+6. **Artifact Upload**: The generated SBOM is uploaded as a build artifact for download
+
+### Artifacts
+After each pipeline run, the SBOM (`sbom.json`) is available as an artifact that can be downloaded from the Actions tab in the GitHub repository.
+
 ## SBOM (Software Bill of Materials)
 This project includes an SBOM (Software Bill of Materials) to provide transparency about its dependencies and components.
 
