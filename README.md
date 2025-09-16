@@ -51,3 +51,17 @@ Using quotaton marks around names with spaces will yield results as above.
 ### Prerequisites
 This project's only requirements are Python v3.8 or higher.
 Once python is installed, no additonal installs are required.
+
+## SBOM (Software Bill of Materials)
+This project includes an SBOM (Software Bill of Materials) to provide transparency about its dependencies and components.
+
+### Generating SBOM
+To generate an SBOM for this project, run:
+```
+python scripts/generate_sbom.py
+```
+
+This will create a `sbom.json` file in the project root containing a CycloneDX-formatted SBOM.
+
+### SBOM in CI
+The SBOM is automatically generated during CI/CD pipeline runs and is available as an artifact for download.
