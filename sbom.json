@@ -1,0 +1,179 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3e671683-40d8-4a8f-9e5b-8a5a3a7b3e7b",
+  "version": 1,
+  "components": [
+    {
+      "type": "platform",
+      "name": "Python 3.10.12",
+      "version": "3.10.12",
+      "purl": "pkg:python/python",
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://www.python.org/"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "name": "s14l",
+      "version": "0.1.0",
+      "purl": "pkg:pypi/s14l@0.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "documentation",
+          "url": "https://github.com/dcsw/snappy-name-tool"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "_abc",
+      "version": "3.10.12",
+      "purl": "pkg:python/_abc@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_ast",
+      "version": "3.10.12",
+      "purl": "pkg:python/_ast@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_bisect",
+      "version": "3.10.12",
+      "purl": "pkg:python/_bisect@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_blake2",
+      "version": "3.10.12",
+      "purl": "pkg:python/_blake2@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_codecs",
+      "version": "3.10.12",
+      "purl": "pkg:python/_codecs@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_collections",
+      "version": "3.10.12",
+      "purl": "pkg:python/_collections@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_csv",
+      "version": "3.10.12",
+      "purl": "pkg:python/_csv@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_datetime",
+      "version": "3.10.12",
+      "purl": "pkg:python/_datetime@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_elementtree",
+      "version": "3.10.12",
+      "purl": "pkg:python/_elementtree@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_functools",
+      "version": "3.10.12",
+      "purl": "pkg:python/_functools@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_heapq",
+      "version": "3.10.12",
+      "purl": "pkg:python/_heapq@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_imp",
+      "version": "3.10.12",
+      "purl": "pkg:python/_imp@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_io",
+      "version": "3.10.12",
+      "purl": "pkg:python/_io@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_locale",
+      "version": "3.10.12",
+      "purl": "pkg:python/_locale@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_md5",
+      "version": "3.10.12",
+      "purl": "pkg:python/_md5@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_operator",
+      "version": "3.10.12",
+      "purl": "pkg:python/_operator@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_pickle",
+      "version": "3.10.12",
+      "purl": "pkg:python/_pickle@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_posixsubprocess",
+      "version": "3.10.12",
+      "purl": "pkg:python/_posixsubprocess@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_random",
+      "version": "3.10.12",
+      "purl": "pkg:python/_random@3.10.12",
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "name": "_sha1",
+      "version": "3.10.12",
+      "purl": "pkg:python/_sha1@3.10.12",
+      "scope": "required"
+    }
+  ]
+}
