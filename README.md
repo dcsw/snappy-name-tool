@@ -82,3 +82,24 @@ This will create a `sbom.json` file in the project root containing a CycloneDX-f
 
 ### SBOM in CI
 The SBOM is automatically generated during CI/CD pipeline runs and is available as an artifact for download.
+
+### SBOM Contents
+The generated SBOM (`sbom.json`) contains the following components:
+
+1. **Python Runtime**: The Python interpreter is listed as a platform component with version information and documentation links.
+
+2. **s14l Application**: The main application component with metadata including:
+   - Type: Application
+   - Name: s14l
+   - Version: 0.1.0
+   - Package URL (purl): pkg:pypi/s14l@0.1.0
+   - License: MIT
+   - Documentation link to the GitHub repository
+
+3. **Standard Library Modules**: A selection of Python standard library modules (limited to the first 20 for manageability) are included as library components with:
+   - Type: Library
+   - Scope: Required
+   - Version matching the Python runtime
+   - Package URLs using the Python package naming convention
+
+The SBOM follows CycloneDX specification 1.4 and provides a comprehensive view of the software components used in this project, enabling better supply chain security and dependency management.
